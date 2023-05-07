@@ -1,16 +1,10 @@
-import string
-import random
+import string, random
 
-minusculas = string.ascii_lowercase
-maiusculas = string.ascii_uppercase
-numeros = string.digits
-especiais = '@#$%^&*()!'
-
-all = minusculas + maiusculas + numeros + especiais
-tamanho = 12
+caracteres = string.ascii_lowercase + string.ascii_uppercase + string.digits + '!@#$%*()_-=+`[]{}~^.,;?:/'
+tamanho = int(input('Digite o tamanho da senha (1-87): '))
 continuar = 'S'
 
 while continuar == 'S':
-    senha = ''.join(random.sample(all, tamanho))
+    senha = ''.join(random.sample(caracteres, tamanho))
     print(f'Senha gerada: {senha}')
     continuar = str(input('Deseja gerar outra? S/N: ').upper())

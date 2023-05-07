@@ -26,6 +26,7 @@ Para instalar o Gerador de Senhas, siga estas etapas:
 Para usar Gerador de Senhas, siga estas etapas:
 
 * Abra o terminal no diretório do projeto e digite `python app.py` ou `python3 app.py` se estiver no linux;
+* Digite o tamanho da senha de 1-87;
 * Após a senha ser gerada, digite 's' se quiser continuar ou 'n' se quiser parar.
 
 ## 📫 Contribuindo para Gerador de Senhas
